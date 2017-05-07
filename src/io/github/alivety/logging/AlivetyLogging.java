@@ -58,7 +58,7 @@ public class AlivetyLogging {
 				h.setFormatter(formatter);
 				log.addHandler(h);
 			} else if (opt==LOGFILE) {
-				Handler h=new FileHandler(title_format.format(d)+"-"+name);
+				Handler h=new FileHandler(title_format.format(d)+"-"+log.getName());
 				h.setFormatter(formatter);
 				log.addHandler(h);
 			}
